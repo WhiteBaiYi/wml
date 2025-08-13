@@ -41,8 +41,8 @@ if mod_client == "vanilla" {
         lines.push("-Xmn128m \\".to_string());
         lines.push("-XX:+UseG1GC \\".to_string());
         lines.push("-XX:-UseAdaptiveSizePolicy \\".to_string());
-        lines.push(format!("-Djava.library.path={}/natives \\",output_path));
-        lines.push(format!("-cp \"{}:{}.jar\" \\", lib, version));
+        lines.push(format!("-Djava.library.path={}natives \\",output_path));
+        lines.push(format!("-cp \"{}:{}{}.jar\" \\", lib,output_path,version));
         lines.push(format!("{} \\", client));
         lines.push(format!("--version {} \\", version));
         lines.push(format!("--gameDir {} \\", output_path));
