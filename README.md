@@ -34,6 +34,6 @@ wml generate --game-path ~/.minecraft/versions/1.21.8/ --client NeoForge --mod-j
 
 整合包只是会把需要的文件下载下来，你需要自己安装一个带有mod加载器的版本来安装modpack，目前只有modrinth被支持
 ```bash
-`wml modpack --file ~/Downloads/test/modrinth.index.json --name whatever `
+wml modpack --file ~/Downloads/test/modrinth.index.json --name whatever
 ```
 # 这个只是我的第一个程序，所以不要对代码质量抱有期待
