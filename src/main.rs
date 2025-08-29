@@ -14,7 +14,7 @@ pub struct Options {
 }
 
 #[derive(Subcommand, Debug)]
-#[command(about = "generate launch script", long_about = "You need two args, the game versions/<version> directory and the client type of the game.example:wml generate --game_path versions/1.21.8/version.json --client_type vanilla --mod_json $HOME/.minecraft/versions/fabric-loader-0.17.2-1.21.8/fabric-loader-0.17.2-1.21.8.json --output_path $HOME/.minecraft/versions/fabric-loader-0.17.2-1.21.8/")]
+#[command()]
 pub enum Argument {
     Install {
         #[arg(short, long)]
